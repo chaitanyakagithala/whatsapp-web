@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)file:///home/the-owl/Desktop/first.html/whatsapp_web/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Document_files/style.css">
+    <script src="./Document_files/script.js"></script>
+    <script src="./Document_files/data.js"></script>
+    <script>
+        let foo = function(){let appPart = document.getElementById("app_part");
+        for(i=0;i<=data.length;i++)
+        {
+            let html = `<div class="chatbox">
+            <div class="chat_image">
+                <img src=${data[i].dp} alt="avatar">
+            </div>
+            <div class="inner_chat_box">
+            <p class="chat_name">
+                ${data[i].name}
+            </p>
+            <div class="message">
+                ${data[i].lastMessage}
+            </div>
+            </div>
+        </div>`
+        appPart.innerHTML += html}
+        }
+    </script>
+      <script>
+        window.onload = foo; 
+    </script>
+    <title>whatsapp web</title>
+</head>
+
+<body>
+    <div id="firstblock">
+        <div id="mainblock">
+            <div id="app_part">
+                <div id="lastthing">
+                    <div class="img_avatar">
+                        <img src="data:image/jpeg;base64,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" alt="avatar">
+                    </div>
+                    <div id="round">
+                        <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M11 5.08V2c-5 .5-9 4.81-9 10s4 9.5 9 10v-3.08c-3-.48-6-3.4-6-6.92s3-6.44 6-6.92zM18.97 11H22c-.47-5-4-8.53-9-9v3.08C16 5.51 18.54 8 18.97 11zM13 18.92V22c5-.47 8.53-4 9-9h-3.03c-.43 3-2.97 5.49-5.97 5.92z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div id="msgbar">
+                        <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM7 9h10c.55 0 1 .45 1 1s-.45 1-1 1H7c-.55 0-1-.45-1-1s.45-1 1-1zm6 5H7c-.55 0-1-.45-1-1s.45-1 1-1h6c.55 0 1 .45 1 1s-.45 1-1 1zm4-6H7c-.55 0-1-.45-1-1s.45-1 1-1h10c.55 0 1 .45 1 1s-.45 1-1 1z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div id="dots">
+                        <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <div id="searchframes">
+                    <div id="searchframe">
+                        <div id="searchbar">
+                            <svg class="MuiSvgIcon-rooto" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                                </path>
+                            </svg>
+                            <input id="border" placeholder="search by name" type="text">
+                        </div>
+                    </div>
+                </div>
+
+            <div class="chatbox">
+            <div class="chat_image">
+                <img src="./Document_files/90027495_2742206495896351_762071388864264369_n.jpg" alt="avatar" style="
+    width: 51px;
+">
+            </div>
+            <div class="inner_chat_box">
+            <p class="chat_name">
+                Har Var
+            </p>
+            <div class="message">
+                Hello
+            </div>
+            </div>
+        </div><div class="chatbox">
+            <div class="chat_image">
+                <img src="./Document_files/90027495_2742206495896351_762071388864264369_n.jpg" alt="avatar">
+            </div>
+            <div class="inner_chat_box">
+            <p class="chat_name">
+                rafiq
+            </p>
+            <div class="message">
+                Hello  hii
+            </div>
+            </div>
+        </div><div class="chatbox">
+            <div class="chat_image">
+                <img src="./Document_files/90027495_2742206495896351_762071388864264369_n.jpg" alt="avatar">
+            </div>
+            <div class="inner_chat_box">
+            <p class="chat_name">
+                amar
+            </p>
+            <div class="message">
+                okay bye
+            </div>
+            </div>
+        </div></div>
+            <div id="openchat">
+             <script>
+            document.write(JSON)
+             </script>[object JSON]
+            </div>
+        </div>
+    </div>
+
+
+
+</body></html>
